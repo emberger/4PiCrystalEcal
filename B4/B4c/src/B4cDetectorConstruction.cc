@@ -133,10 +133,10 @@ void B4cDetectorConstruction::DefineMaterials()
         G4int LYSOcomponents = 4;
         G4Material * LYSO = new G4Material("LYSO", LYSOdensity, LYSOcomponents);
 
-        LYSO->AddElement(nistManager->FindOrBuildElement(71), 9);
+        LYSO->AddElement(nistManager->FindOrBuildElement(71), 19);
         LYSO->AddElement(nistManager->FindOrBuildElement(39), 1);
-        LYSO->AddElement(nistManager->FindOrBuildElement(14), 5);
-        LYSO->AddElement(nistManager->FindOrBuildElement(8), 25);
+        LYSO->AddElement(nistManager->FindOrBuildElement(14), 10);
+        LYSO->AddElement(nistManager->FindOrBuildElement(8), 50);
 
         //TBBPA material
         G4double TBBPAdensity=2.12*g/cm3;
